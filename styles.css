@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Tenor+Sans:400');
+
+/*  we give 100% font size for the responsive text sizing */
+html {font-size: 100%;} /*16px*/
+
+/* Fun notes */
+/* Margin goes around the block element like the slim shady song - Around the outside */
+/* Padding gives the volume within itself */
+/* Body styles are styles that are used through out the website like text color etc */
+body{
+    margin: 0;
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #675ADE;
+    background-color: #F7F5FF;
+}
+/* Typography */
+/* I use this tool to help me define my typography scale https://type-scale.com/ */
+
+/* REM stands for relative element unit
+    3 * 16 */
+
+   
+h1 {
+    /* margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 1.38rem;
+    margin-right: 1.38rem; */
+    margin: 3rem 1.38rem;
+    font-size: 4.209rem;
+}
+ /* Above we learnt here we can write shorthand for margins  */
+h2 {
+    font-size: 3.157rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+p {
+    font-size: 1.777rem;
+    margin-bottom: 1rem
+}
+.text_small{
+    font-size: 1.1rem;
+}
+strong { font-weight: bold; }
+
+a{
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+a:hover{
+    color: rgb(0, 203, 125);
+}
+
+/* Container for content */
+/* We can use both flex to center all the content on the page */
+/* To learn more about flex box please read this link */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* Fun nerd fact - i named my cat after flexbox haha */
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero section */
+/* Our hero section styling covers a background image  */
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/circle_desktop_bg.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.profile_photo{
+    border-top-left-radius: 50% 30%;
+    border-top-right-radius: 50% 30%;
+}
+/* We can target elements within a parent class by using
+Parent name class - then element name */
+.hero h1{
+    padding: 2rem 0;
+    text-align: center;
+    width: 50%;
+}
+.hero p{
+    margin: 8rem 0;
+    width: 50%;
+    text-align: center;
+}
+
+.project_info{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.project_info a{
+    align-self: center;
+}
+/* Gradients - Direction - first colour - second colour */
+/* Gradient website https://cssgradient.io/ */
+
+footer{
+    padding: 2rem 0;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgb(211 226 255));
+}
